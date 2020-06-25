@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hyperhire is a HR agency that helps hiring communication easier.">
+
+    <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet" type="text/css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="resources/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="resources/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="resources/favicons/favicon-16x16.png">
+    <link rel="manifest" href="resources/favicons/site.webmanifest">
+    <link rel="mask-icon" href="resources/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-config" content="resources/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Hyperhire</title>
+</head>
+
+<body>
+    <header id="1">
+        <nav>
+            <div class="row">
+                <a href="#"><%= image_tag("hyperhire_logo.png", :alt => "Hyperhire logo", :class => "logo") %></a>
+                <a href="#"><%= image_tag("hyperhire_logo.png", :alt => "Hyperhire logo", :class => "logo-sticky") %></a>
+                <ul class="main-nav">
+                    <li><a href="#2">About us</a></li>
+                    <li><a href="#3">Product tour</a></li>
+                    <li><a href="#4">Location</a></li>
+                    <li><a href="#5">Sign-up</a></li>
+                </ul>
+                <a class="mobile-nav-icon"><i class="ion-ios-menu"></i></a>
+            </div>
+        </nav>
+        <div class="hero-text-box">
+            <h1>Goodbye 1000 resumes, <br>Hello 1 candidate.</h1>
+            <a class="btn btn-full" href="#5">Find a candidate</a>
+            <a class="btn btn-ghost" href="#2">Show me more</a>
+        </div>
+    </header>
+
+    <section class="section-features" id="2">
+        <div class="row">
+            <h2>Get candidates fast &mdash; with high accuracy</h2>
+            <p class="long-copy">
+                Hello, we're Hyperhire, your new HR management agency. We know you're always busy. Hundreds of
+                resumes with only little time to review. Let us take care of that for you!
+            </p>
+        </div>
+
+        <div class="row">
+            <div class="col span-1-of-4 box">
+                <i class="icon ion-ios-people icon-big"></i>
+                <h3>Perfect Match</h3>
+                <p>
+                    Tired of reading resume? Our product offers you a simple, powerful
+                    HR solution: Referral.
+                    Find a perfect employee for your company with less than two weeks of time.
+                </p>
+            </div>
+            <div class="col span-1-of-4 box">
+                <i class="icon ion-ios-cash icon-big"></i>
+                <h3>Referral Bonus</h3>
+                <p>
+                    You're only two-friends away from earning money as much as your monthly pay. Help your friends'
+                    friend with their career path. Earn money and strenghten your network simultaneously.
+                </p>
+            </div>
+            <div class="col span-1-of-4 box">
+                <i class="icon ion-ios-heart icon-big"></i>
+                <h3>Good Reputation</h3>
+                <p>
+                    Networking is as important as working hard. Get connected to the people in the same
+                    field in Hyperhire community. Good to connect, and good to get a high-quality job.
+                </p>
+            </div>
+            <div class="col span-1-of-4 box">
+                <i class="icon ion-ios-briefcase icon-big"></i>
+                <h3>Career Helper</h3>
+                <p>
+                    We don't limit your career path, which means you can feel free to transfer your
+                    job. You can also see the jobs other people shared in a well-organised list. It's your career path,
+                    give it a go!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Our clients</h2>
+        <ul class="clients-showcase clearfix">
+            <li>
+                <figure class="clients-photo">
+                    <a href="http://www.jointips.or.kr/bbs/board.php?bo_table=team&wr_id=922" rel="noopener noreferrer"
+                        target="_blank">
+                        <%= image_tag("a.jpg", :alt => "tipstown seed-funding") %></a>
+                </figure>
+            </li>
+            <li>
+                <figure class="clients-photo">
+                    <a href="https://platum.kr/archives/124590" rel="noopener noreferrer" target="_blank">
+                        <%= image_tag("f.jpg", :alt => "Platum news") %></a>
+                </figure>
+            </li>
+            <li>
+                <figure class="clients-photo">
+                    <a href="https://wowtale.net/2019/07/09/hyperhire-funding-from-springcamp/"
+                        rel="noopener noreferrer" target="_blank">
+                        <%= image_tag("c.jpg", :alt => "Wowtale news") %></a>
+                </figure>
+            </li>
+            <li>
+                <figure class="clients-photo">
+                    <a href="https://www.voicendata.com/hyperhire-receives-investment-worth-200k-usd-korean-vc-launch-referral-platform-jobket-india/"
+                        rel="noopener noreferrer" target="_blank">
+                        <%= image_tag("d.jpg", :alt => "voicedata news") %></a>
+                </figure>
+            </li>
+            <li>
+                <figure class="clients-photo">
+                    <a href="https://yourstory.com/2019/05/b2b-hr-startup-hyperhire-funding-springcamp-korea"
+                        rel="noopener noreferrer" target="_blank">
+                        <%= image_tag("e.jpg", :alt => "Yourstory news") %></a>
+                </figure>
+            </li>
+            <li>
+                <figure class="clients-photo">
+                    <a href="https://www.voicendata.com/hyperhire-receives-investment-worth-200k-usd-korean-vc-launch-referral-platform-jobket-india/"
+                        rel="noopener noreferrer" target="_blank">
+                        <%= image_tag("d.jpg", :alt => "voicedata news") %></a>
+                </figure>
+            </li>
+            <li>
+                <figure class="clients-photo">
+                    <a href="http://www.jointips.or.kr/bbs/board.php?bo_table=team&wr_id=922" rel="noopener noreferrer"
+                        target="_blank">
+                        <%= image_tag("a.jpg", :alt => "tipstown seed-funding") %></a>
+                </figure>
+            </li>
+            <li>
+                <figure class="clients-photo">
+                    <a href="https://wowtale.net/2019/07/09/hyperhire-funding-from-springcamp/"
+                        rel="noopener noreferrer" target="_blank">
+                        <%= image_tag("c.jpg", :alt => "Wowtale news") %></a>
+                </figure>
+            </li>
+        </ul>
+    </section>
+
+    <section class="section-steps" id="3">
+        <div class="row">
+            <h2>Simple and intuitive steps</h2>
+        </div>
+        <div class="row">
+            <div class="col span-1-of-2 steps-box">
+                <%= image_tag("galaxy2.png", :alt => "Hyperhire app on iPhone", :class => "app-screen") %>
+            </div>
+            <div class="col span-1-of-2 steps-box">
+                <div>
+                    <div class="works-step">
+                        <div>1</div> Download the app and make a chatroom with your friends that fits your need.
+                    </div>
+                    <div class="works-step">
+                        <div>2</div> Share your JD conveniently with your friends, and send notifications with a few
+                        clicks
+                    </div>
+                    <div class="works-step">
+                        <div>3</div> Manage your own ATS and export information to headhunters without a fuss!
+                    </div>
+                    <a href="#" class="btn-app">
+                        <%= image_tag("download-app.svg", :alt => "App Store Button") %>
+                    </a>
+                    <a href="#" class="btn-app">
+                        <%= image_tag("download-app-android.png", :alt => "Play Store Button") %>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-cities" id="4">
+
+        <div class="row">
+            <h2>We're currently in these cities</h2>
+        </div>
+        <div class="row">
+            <div class="col span-1-of-2 box city-box">
+                <%= image_tag("india.jpg", :alt => "India") %>
+                <h3>Gurgaon, India</h3>
+                <div class="city-features">
+                    <i class="icon ion-ios-compass icon-small"></i>
+                    DLF Phase 2, Gurugram, Haryana 122002, India
+                </div>
+                <div class="city-features">
+                    <i class="icon ion-ios-star icon-small"></i>
+                    Company office supported by Korean Government
+                </div>
+                <div class="city-features">
+                    <i class="icon ion-logo-twitter icon-small"></i>
+                    <a href="https://www.instagram.com/jobketindia/?hl=ko">@hyperhireIndia</a>
+                </div>
+            </div>
+
+            <div class="col span-1-of-2 box city-box">
+                <%= image_tag("southkorea.jpg", :alt => "Seoul") %>
+                <h3>Seoul, South Korea</h3>
+                <div class="city-features">
+                    <i class="icon ion-ios-compass icon-small"></i>
+                    24 Gangnam-daero 126-gil, Nonhyeon-dong
+                </div>
+                <div class="city-features">
+                    <i class="icon ion-ios-star icon-small"></i>
+                    Company office that could sustain twelve people
+                </div>
+                <div class="city-features">
+                    <i class="icon ion-logo-twitter icon-small"></i>
+                    <a href="#">@hyperhireKorea</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-testimonials">
+        <div class="row">
+            <h2>Candidates' voice is also important</h2>
+        </div>
+        <div class="row">
+            <div class="col span-1-of-3">
+                <blockquote>
+                    Job hunt can be quite a pain especially when you're dependent on partners for whom you're
+                    just a
+                    candidate, not more. Hyperhire made me lucky and most certainly gave me the professional
+                    side of
+                    guidance. I could talk to the team at any time and they supported my hunt.
+                    <cite><%= image_tag("customer-1.jpg", :alt => "Vivek") %>
+                    Vivek Anand M</cite>
+                </blockquote>
+            </div>
+            <div class="col span-1-of-3">
+                <blockquote>
+                    During my search for a perfect job, interviews with HR agencies were daunting and never
+                    resulted in
+                    job placement. But my search took a positive turn the day I registered with Hyperhire. I
+                    would
+                    recommend Hyperhire to anyone who is serious and dedicated to finding the right
+                    job.
+                    <cite><%= image_tag("customer-2.jpg", :alt => "Yogaraj") %>S Yogaraj</cite>
+                </blockquote>
+            </div>
+            <div class="col span-1-of-3">
+                <blockquote>
+                    Hyperhire listened to what I wanted and gave me
+                    fantastic advice. Throughout the whole process Hyperhire supported me & within two days I
+                    had a job
+                    offer. I am now very happy in my new job role. So transparent and professional! I
+                    would always happily recommend Hyperhire.
+                    <cite><%= image_tag("customer-3.jpg", :alt => "Juned") %>Juned Patel</cite>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-plans" id="5">
+        <div class="row">
+            <h2>Find your potential workers</h2>
+        </div>
+        <div class="row">
+            <div class="col span-1-of-3">
+                <div class="plan-box">
+                    <div>
+                        <h3>Premium</h3>
+                        <p class="plan-price">$50 <span>/month</span></p>
+                        <p class="plan-price-candidate">Huge saving for the company</p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><i class="ion-ios-checkmark icon-small"></i>AI-based suggestions</li>
+                            <li><i class="ion-ios-checkmark icon-small"></i>Efficient tracking</li>
+                            <li><i class="ion-ios-checkmark icon-small"></i>Easy notifications</li>
+                            <li><i class="ion-ios-checkmark icon-small"></i>Export to excel, pdf files</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="/sessions/new" class="btn btn-ghost">Sign up now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col span-1-of-3">
+                <div class="plan-box">
+                    <div>
+                        <h3>Pro</h3>
+                        <p class="plan-price">$15<span> / month</span></p>
+                        <p class="plan-price-candidate">ATS for you and your colleagues</p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><i class="ion-ios-checkmark icon-small"></i>Share JDs seamlessly</li>
+                            <li><i class="ion-ios-checkmark icon-small"></i>Efficient tracking</li>
+                            <li><i class="ion-ios-checkmark icon-small"></i>Easy notifications</li>
+                            <li><i class="ion-ios-checkmark icon-small"></i>Export to excel, pdf files</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="/sessions/new" class="btn btn-full">Sign up now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col span-1-of-3">
+                <div class="plan-box">
+                    <div>
+                        <h3>Simple</h3>
+                        <p class="plan-price">$10<span>/month</span></p>
+                        <p class="plan-price-candidate">You're getting your own ATS</p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><i class="ion-ios-checkmark icon-small"></i>Share JDs seamlessly</li>
+                            <li><i class="ion-ios-checkmark icon-small"></i>Efficient tracking</li>
+                            <li><i class="ion-ios-checkmark icon-small"></i>Easy communication</li>
+                            <li><i class="ion-ios-checkmark icon-small"></i>Export to pdf files</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="/sessions/new" class="btn btn-ghost">Sign up now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-form">
+        <div class="row">
+            <h2>Subcribe to get updates</h2>
+        </div>
+
+        <div class="contact-form">
+            <div class = "row">
+                <%= form_for :opinions, url: opinions_path do |f| %>
+                    <div class="row">
+                        <div class = "col span-1-of-3">
+                        <%= f.label :name %>
+                        </div>
+                        <div class = "col span-2-of-3">
+                        <%= f.text_field :name, id: "name", placeholder: "Your name here" %>
+                        </div>
+                     </div>
+    
+                    <div class="row">
+                        <div class = "col span-1-of-3">
+                        <%= f.label :email %>
+                        </div>
+                        <div class = "col span-2-of-3">
+                        <%= f.text_field :email, id: "email", placeholder: "Your email address" %>
+                        </div>
+                     </div>
+    
+    
+                    <div class="row">
+                        <div class = "col span-1-of-3">
+                        <%= f.label "How did you find us?" %>
+                        </div>
+                        <div class = "col span-2-of-3">
+                        <%= f.select "find-us", [ 'Word of mouth', 'Search engine', 'Ad', 'Colleagues', 'Other' ], :prompt => 'Select One' %>
+                        </div>
+                     </div>
+                     
+                    <div class="row">
+                        <div class = "col span-1-of-3">
+                        <%= f.label "Newsletters?" %>
+                        </div>
+                        <div class = "col span-2-of-3">
+                        <%= f.check_box :newsletter, id: "news" %>  Yes, please
+                        </div>
+                     </div>                 
+                     
+                    <div class="row">
+                        <div class = "col span-1-of-3">
+                             <%= f.label "Drop us a line" %>
+                         </div>
+                        <div class = "col span-2-of-3">
+                             <%= f.text_area :comments %>
+                        </div>
+                     </div>
+    
+                    <div class="row">
+                        <div class = "col span-1-of-3">
+                             <%= f.label :" "  %>
+                        </div>
+                         <div class="col span-2-of-3">
+                             <%= f.submit %>
+                         </div>
+                    </div>
+                    
+                <% end %>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="row">
+            <div class="col span-1-of-2">
+                <ul class="footer-nav">
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">iOS App</a></li>
+                    <li><a href="#">Android</a></li>
+                </ul>
+            </div>
+            <div class="col span-1-of-2">
+                <ul class="social-links">
+                    <li><a href="#"><i class="icon ion-logo-facebook"></i></a></li>
+                    <li><a href="#"><i class="icon ion-logo-twitter"></i></a></li>
+                    <li><a href="#"><i class="icon ion-logo-googleplus"></i></a></li>
+                    <li><a href="#"><i class="icon ion-logo-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <p>
+                Copyright &copy; 2020 by Hyperhire. All rights reserved.
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

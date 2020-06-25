@@ -1,0 +1,13 @@
+class CreateOpinions < ActiveRecord::Migration[5.0]
+  def change
+    create_table :opinions do |t|
+      t.string :name
+      t.string :email
+      t.string "find-us"
+      t.boolean :newsletter
+      t.text :comments
+
+      t.timestamps
+    end
+  end
+end

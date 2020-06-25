@@ -1,0 +1,141 @@
+[2020-06-16 03:15:34] requirements_centos_libs_install
+requirements_centos_libs_install () 
+{ 
+    __rvm_try_sudo yum install -y "$@" || return $?
+}
+current path: /home/ec2-user
+PATH=/home/ec2-user/.nvm/versions/node/v10.21.0/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/opt/aws/bin:/usr/local/bin:/home/ec2-user/.local/bin:/home/ec2-user/bin:/home/ec2-user/.rvm/bin:/home/ec2-user/.local/bin:/home/ec2-user/bin:/opt/aws/bin:/usr/local/bin:/home/ec2-user/.local/bin:/home/ec2-user/bin:/home/ec2-user/.rvm/bin:/home/ec2-user/.local/bin:/home/ec2-user/bin
+command(6): requirements_centos_libs_install libffi-devel readline-devel sqlite-devel libyaml-devel openssl-devel
+++ __rvm_try_sudo yum install -y libffi-devel readline-devel sqlite-devel libyaml-devel openssl-devel
+++ typeset -a command_to_run
+++ typeset sudo_path sbin_path missing_paths
+++ command_to_run=("$@")
+++ ((  UID == 0  ))
+++ case "$rvm_autolibs_flag_number" in
+++ is_a_function __rvm_sudo
+++ typeset -f __rvm_sudo
+++ missing_paths=
+++ for sbin_path in /sbin /usr/sbin /usr/local/sbin
+++ [[ -d /sbin ]]
+++ [[ :/home/ec2-user/.nvm/versions/node/v10.21.0/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/opt/aws/bin:/usr/local/bin:/home/ec2-user/.local/bin:/home/ec2-user/bin:/home/ec2-user/.rvm/bin:/home/ec2-user/.local/bin:/home/ec2-user/bin:/opt/aws/bin:/usr/local/bin:/home/ec2-user/.local/bin:/home/ec2-user/bin:/home/ec2-user/.rvm/bin:/home/ec2-user/.local/bin:/home/ec2-user/bin: != *\:\/\s\b\i\n\:* ]]
+++ for sbin_path in /sbin /usr/sbin /usr/local/sbin
+++ [[ -d /usr/sbin ]]
+++ [[ :/home/ec2-user/.nvm/versions/node/v10.21.0/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/opt/aws/bin:/usr/local/bin:/home/ec2-user/.local/bin:/home/ec2-user/bin:/home/ec2-user/.rvm/bin:/home/ec2-user/.local/bin:/home/ec2-user/bin:/opt/aws/bin:/usr/local/bin:/home/ec2-user/.local/bin:/home/ec2-user/bin:/home/ec2-user/.rvm/bin:/home/ec2-user/.local/bin:/home/ec2-user/bin: != *\:\/\u\s\r\/\s\b\i\n\:* ]]
+++ for sbin_path in /sbin /usr/sbin /usr/local/sbin
+++ [[ -d /usr/local/sbin ]]
+++ [[ :/home/ec2-user/.nvm/versions/node/v10.21.0/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/opt/aws/bin:/usr/local/bin:/home/ec2-user/.local/bin:/home/ec2-user/bin:/home/ec2-user/.rvm/bin:/home/ec2-user/.local/bin:/home/ec2-user/bin:/opt/aws/bin:/usr/local/bin:/home/ec2-user/.local/bin:/home/ec2-user/bin:/home/ec2-user/.rvm/bin:/home/ec2-user/.local/bin:/home/ec2-user/bin: != *\:\/\u\s\r\/\l\o\c\a\l\/\s\b\i\n\:* ]]
+++ [[ -n '' ]]
+++ command_to_run=(__rvm_sudo -p "%p password required for '$*': " "${command_to_run[@]}")
+++ __rvm_sudo -p '%p password required for '\''yum install -y libffi-devel readline-devel sqlite-devel libyaml-devel openssl-devel'\'': ' yum install -y libffi-devel readline-devel sqlite-devel libyaml-devel openssl-devel
+++ command sudo -p '%p password required for '\''yum install -y libffi-devel readline-devel sqlite-devel libyaml-devel openssl-devel'\'': ' yum install -y libffi-devel readline-devel sqlite-devel libyaml-devel openssl-devel
+++ sudo -p '%p password required for '\''yum install -y libffi-devel readline-devel sqlite-devel libyaml-devel openssl-devel'\'': ' yum install -y libffi-devel readline-devel sqlite-devel libyaml-devel openssl-devel
+Loaded plugins: priorities, update-motd, upgrade-helper
+1073 packages excluded due to repository priority protections
+Resolving Dependencies
+--> Running transaction check
+---> Package libffi-devel.x86_64 0:3.0.13-16.5.amzn1 will be installed
+---> Package libyaml-devel.x86_64 0:0.1.6-6.7.amzn1 will be installed
+---> Package openssl-devel.x86_64 1:1.0.2k-16.151.amzn1 will be installed
+--> Processing Dependency: krb5-devel(x86-64) for package: 1:openssl-devel-1.0.2k-16.151.amzn1.x86_64
+---> Package readline-devel.x86_64 0:6.2-9.14.amzn1 will be installed
+--> Processing Dependency: ncurses-devel for package: readline-devel-6.2-9.14.amzn1.x86_64
+---> Package sqlite-devel.x86_64 0:3.7.17-8.14.amzn1 will be installed
+--> Running transaction check
+---> Package krb5-devel.x86_64 0:1.15.1-46.48.amzn1 will be installed
+--> Processing Dependency: libkadm5(x86-64) = 1.15.1-46.48.amzn1 for package: krb5-devel-1.15.1-46.48.amzn1.x86_64
+--> Processing Dependency: libverto-devel for package: krb5-devel-1.15.1-46.48.amzn1.x86_64
+--> Processing Dependency: libselinux-devel for package: krb5-devel-1.15.1-46.48.amzn1.x86_64
+--> Processing Dependency: libcom_err-devel for package: krb5-devel-1.15.1-46.48.amzn1.x86_64
+--> Processing Dependency: keyutils-libs-devel for package: krb5-devel-1.15.1-46.48.amzn1.x86_64
+---> Package ncurses-devel.x86_64 0:5.7-4.20090207.14.amzn1 will be installed
+--> Running transaction check
+---> Package keyutils-libs-devel.x86_64 0:1.5.8-3.12.amzn1 will be installed
+---> Package libcom_err-devel.x86_64 0:1.43.5-2.43.amzn1 will be installed
+---> Package libkadm5.x86_64 0:1.15.1-46.48.amzn1 will be installed
+---> Package libselinux-devel.x86_64 0:2.1.10-3.22.amzn1 will be installed
+--> Processing Dependency: libsepol-devel >= 2.1.5-1 for package: libselinux-devel-2.1.10-3.22.amzn1.x86_64
+--> Processing Dependency: pkgconfig(libsepol) for package: libselinux-devel-2.1.10-3.22.amzn1.x86_64
+---> Package libverto-devel.x86_64 0:0.2.5-4.9.amzn1 will be installed
+--> Running transaction check
+---> Package libsepol-devel.x86_64 0:2.1.7-3.12.amzn1 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package               Arch     Version                    Repository      Size
+================================================================================
+Installing:
+ libffi-devel          x86_64   3.0.13-16.5.amzn1          amzn-main       23 k
+ libyaml-devel         x86_64   0.1.6-6.7.amzn1            amzn-main      124 k
+ openssl-devel         x86_64   1:1.0.2k-16.151.amzn1      amzn-updates   1.7 M
+ readline-devel        x86_64   6.2-9.14.amzn1             amzn-main      141 k
+ sqlite-devel          x86_64   3.7.17-8.14.amzn1          amzn-main      111 k
+Installing for dependencies:
+ keyutils-libs-devel   x86_64   1.5.8-3.12.amzn1           amzn-main       37 k
+ krb5-devel            x86_64   1.15.1-46.48.amzn1         amzn-updates   293 k
+ libcom_err-devel      x86_64   1.43.5-2.43.amzn1          amzn-updates    36 k
+ libkadm5              x86_64   1.15.1-46.48.amzn1         amzn-updates   203 k
+ libselinux-devel      x86_64   2.1.10-3.22.amzn1          amzn-main      157 k
+ libsepol-devel        x86_64   2.1.7-3.12.amzn1           amzn-main       70 k
+ libverto-devel        x86_64   0.2.5-4.9.amzn1            amzn-main       11 k
+ ncurses-devel         x86_64   5.7-4.20090207.14.amzn1    amzn-main      683 k
+
+Transaction Summary
+================================================================================
+Install  5 Packages (+8 Dependent packages)
+
+Total download size: 3.5 M
+Installed size: 7.7 M
+Downloading packages:
+--------------------------------------------------------------------------------
+Total                                              5.4 MB/s | 3.5 MB  00:00     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : ncurses-devel-5.7-4.20090207.14.amzn1.x86_64                1/13 
+  Installing : libcom_err-devel-1.43.5-2.43.amzn1.x86_64                   2/13 
+  Installing : libkadm5-1.15.1-46.48.amzn1.x86_64                          3/13 
+  Installing : libverto-devel-0.2.5-4.9.amzn1.x86_64                       4/13 
+  Installing : keyutils-libs-devel-1.5.8-3.12.amzn1.x86_64                 5/13 
+  Installing : libsepol-devel-2.1.7-3.12.amzn1.x86_64                      6/13 
+  Installing : libselinux-devel-2.1.10-3.22.amzn1.x86_64                   7/13 
+  Installing : krb5-devel-1.15.1-46.48.amzn1.x86_64                        8/13 
+  Installing : 1:openssl-devel-1.0.2k-16.151.amzn1.x86_64                  9/13 
+  Installing : readline-devel-6.2-9.14.amzn1.x86_64                       10/13 
+  Installing : libffi-devel-3.0.13-16.5.amzn1.x86_64                      11/13 
+  Installing : sqlite-devel-3.7.17-8.14.amzn1.x86_64                      12/13 
+  Installing : libyaml-devel-0.1.6-6.7.amzn1.x86_64                       13/13 
+  Verifying  : libsepol-devel-2.1.7-3.12.amzn1.x86_64                      1/13 
+  Verifying  : keyutils-libs-devel-1.5.8-3.12.amzn1.x86_64                 2/13 
+  Verifying  : libverto-devel-0.2.5-4.9.amzn1.x86_64                       3/13 
+  Verifying  : krb5-devel-1.15.1-46.48.amzn1.x86_64                        4/13 
+  Verifying  : libkadm5-1.15.1-46.48.amzn1.x86_64                          5/13 
+  Verifying  : readline-devel-6.2-9.14.amzn1.x86_64                        6/13 
+  Verifying  : libyaml-devel-0.1.6-6.7.amzn1.x86_64                        7/13 
+  Verifying  : libcom_err-devel-1.43.5-2.43.amzn1.x86_64                   8/13 
+  Verifying  : sqlite-devel-3.7.17-8.14.amzn1.x86_64                       9/13 
+  Verifying  : 1:openssl-devel-1.0.2k-16.151.amzn1.x86_64                 10/13 
+  Verifying  : libffi-devel-3.0.13-16.5.amzn1.x86_64                      11/13 
+  Verifying  : libselinux-devel-2.1.10-3.22.amzn1.x86_64                  12/13 
+  Verifying  : ncurses-devel-5.7-4.20090207.14.amzn1.x86_64               13/13 
+
+Installed:
+  libffi-devel.x86_64 0:3.0.13-16.5.amzn1                                       
+  libyaml-devel.x86_64 0:0.1.6-6.7.amzn1                                        
+  openssl-devel.x86_64 1:1.0.2k-16.151.amzn1                                    
+  readline-devel.x86_64 0:6.2-9.14.amzn1                                        
+  sqlite-devel.x86_64 0:3.7.17-8.14.amzn1                                       
+
+Dependency Installed:
+  keyutils-libs-devel.x86_64 0:1.5.8-3.12.amzn1                                 
+  krb5-devel.x86_64 0:1.15.1-46.48.amzn1                                        
+  libcom_err-devel.x86_64 0:1.43.5-2.43.amzn1                                   
+  libkadm5.x86_64 0:1.15.1-46.48.amzn1                                          
+  libselinux-devel.x86_64 0:2.1.10-3.22.amzn1                                   
+  libsepol-devel.x86_64 0:2.1.7-3.12.amzn1                                      
+  libverto-devel.x86_64 0:0.2.5-4.9.amzn1                                       
+  ncurses-devel.x86_64 0:5.7-4.20090207.14.amzn1                                
+
+Complete!

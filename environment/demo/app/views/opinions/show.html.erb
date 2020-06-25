@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Login page for Hyperhire">
+    <title>Hyperhire</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="row">
+                <a href="/main/index.html"><%= image_tag("hyperhire_logo.png", :alt => "Hyperhire logo", :class => "logo") %></a>
+            </div>
+        </nav>
+        <section>
+            <div class="row">
+            <h1>Thank you, your opinion was submitted.</h1>
+                <p>
+                 <strong>Name:</strong>
+                 <%= @opinion.name %>
+                </p>
+                
+                <p>
+                 <strong>Email:</strong>
+                 <%= @opinion.email %>
+                </p>
+                
+                <p>
+                 <strong>Newsletters: </strong>
+                 <%= @opinion.newsletter %>
+                </p>
+                
+                <p>
+                 <strong>Comments: </strong>
+                 <%= @opinion.comments %>
+                </p>
+           <div class="logo">
+            <a class="btn btn-full" href="/main/index">Go back</a>
+           </div>
+            </div>
+        </section>
+    </header>
+</body>

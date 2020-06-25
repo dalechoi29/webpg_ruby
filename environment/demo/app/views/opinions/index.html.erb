@@ -1,0 +1,20 @@
+<h1>Listing opinions</h1>
+<table>
+ <tr>
+ <th>Name</th>
+ <th>Email</th>
+ <th>Route</th>
+ <th>Newsletter</th>
+ <th>Comments</th>
+ </tr>
+ <% @opinions.each do |opinion| %>
+ <tr>
+ <td><%= opinion.name %></td>
+ <td><%= opinion.email %></td>
+ <td><%= opinion.email %></td>
+ <td><%= opinion.newsletter %></td>
+ <td><%= opinion.comments %></td>
+
+ </tr>
+ <% end %>
+</table>
